@@ -1,0 +1,9 @@
+D:\C# projects\Lab6\bin\Debug\Rpn.exe
+D:\C# projects\Lab6\bin\Debug\Rpn.pdb
+D:\C# projects\Lab6\bin\Debug\Rpn.Logic.dll
+D:\C# projects\Lab6\bin\Debug\Rpn.Logic.pdb
+D:\C# projects\Lab6\obj\Debug\Rpn.csproj.AssemblyReference.cache
+D:\C# projects\Lab6\obj\Debug\Rpn.csproj.CoreCompileInputs.cache
+D:\C# projects\Lab6\obj\Debug\Rpn.csproj.Up2Date
+D:\C# projects\Lab6\obj\Debug\Rpn.exe
+D:\C# projects\Lab6\obj\Debug\Rpn.pdb
