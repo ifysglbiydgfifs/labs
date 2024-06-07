@@ -1,0 +1,46 @@
+﻿<Window x:Class="Rpn.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RPN Calculator" Height="500" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="10,10,10,10">
+                <Label Content="Введите выражение"/>
+                <TextBox x:Name="tbInput" Text="sin(x)" MinWidth="300" Width="Auto" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderThickness="1,1,1,1" BorderBrush="DarkGray" Grid.Column="0" Margin="10,10,10,10">
+                <Canvas x:Name="cGraphic" MouseMove="GraphicMouseMove" 
+                                Background="Transparent" Loaded="cGraphic_Loaded" ClipToBounds="True">
+                    
+                </Canvas>
+            </Border>    
+            <StackPanel Orientation="Vertical" Grid.Column="1" Margin="10,10,10,10">
+                <Label Content="Начало"></Label>
+                <TextBox x:Name="tbStartPoint" Text="-10"></TextBox>
+                <Label Content="Конец"></Label>
+                <TextBox x:Name="tbEndPoint" Text="10"></TextBox>
+                <Label Content="Шаг"></Label>
+                <TextBox x:Name="tbStep" Text="0,1"></TextBox>
+                <Label Content="Масштаб"></Label>
+                <TextBox x:Name="tbZoom" Text="20"></TextBox>
+                <Button Content="Обновить" Click="btnClick" Margin="0,10,0,0"></Button>
+            </StackPanel>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Label Name="lblUiCoordinates" Content="Debug info"></Label>
+            <Separator></Separator>
+            <Label Name="lblMathCoordinates" Content="Debug info"></Label>
+        </StackPanel>
+    </Grid>    
+</Window>
